@@ -1,10 +1,12 @@
 from flask import Flask
+from flask import request
 
 app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello World!2ffaffsfs"
+	incoming_data = request.args.get()
+    return incoming_data
 
 
 if __name__ == '__main__':
