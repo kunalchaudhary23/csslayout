@@ -1,8 +1,6 @@
 from flask import Flask
 from flask import request
 import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.cm as cm
 from copy import copy
 import json as json
 
